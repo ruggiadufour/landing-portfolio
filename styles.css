@@ -1,13 +1,21 @@
 html {
     scroll-behavior: auto;
-  }
+    border: solid thin rgb(177, 174, 174);
+}
 body{
     margin: 0px;
     padding: 0px;
+    background-color: gray!important;
+    overflow-x: hidden;
 }
 .card {
     background-color: rgba(68, 67, 67, 0.301)!important;
 }
+.hero-body {
+    background-color: rgba(68, 67, 67, 0.301)!important;
+}
+
+
 #init{
     background-image: url(images/init.jpg);
     background-position: center;
@@ -34,4 +42,11 @@ body{
     background-image: url(images/contact.png);
     background-position: center;
     background-size: cover;  
+}
+.v-h {
+    position: absolute !important;
+    height: 1px; width: 1px; 
+    display: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
 }
