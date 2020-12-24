@@ -11,9 +11,11 @@
 
       <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
       <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="image.css">
       <link rel="stylesheet" href="bulma.min.css">
       <link rel="stylesheet" href="scrollreveal.js">
       <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <section class="hero is-fullheight" id="init">
@@ -205,20 +207,94 @@
       </div>
     </section>
 
-    <section class="hero is-fullheight" id="portfolio">
-      <div class="hero-body">
+    <section class="hero" id="portfolio">
+      <div >
         <div class="container">
-          <h1 class="is-size-1 title" >
-            Portfolio
-          </h1>
+          <div class="container">
+            <h1 class="is-size-1 title" >
+              Portfolio
+            </h1>
+            <h2 class="is-size-3 subtitle">
+              Repository
+            </h2>
+
+          </div>
+          <div class="project image-repo" style="margin:auto; max-width: 600px">
+            <div class="github-card " theme="dark" target="blank" data-github="ruggiadufour" data-width="400" data-height="317" data-theme="medium"></div>
+          </div>
+    
           <h2 class="is-size-3 subtitle">
-            Repository
+            Projects
           </h2>
+          <div class="project">;
+            <!--Servia-->
+            <h3 class="is-size-3 has-text-light has-text-centered subtitle is-family-code">
+              Servia
+            </h3>
+            <ul class="image-repo" style="margin-left: 15px; justify-content: space-around;"> 
+              <li class="has-text-light">
+                <img src="images/react.png" alt="React" width="28px" height="28px">
+                ReactJS
+              </li> 
+              <li class="has-text-light">
+                <img src="images/materialui.svg" alt="React" width="28px" height="28px">
+                Material UI
+              </li> 
+              <li class="has-text-light">
+                <img src="images/strapi.png" alt="React" width="28px" height="28px">
+                Strapi
+              </li> 
+              <li class="has-text-light">
+                <img src="images/mysql.svg" alt="React" width="28px" height="28px">
+                MySQL
+              </li> 
+            </ul>
+            <div class="image-repo images">&times;
+              <img class="imagen" src="images/Servia.png" alt="">
+              <div class="github-card " theme="dark" target="blank" data-github="ruggiadufour" data-repo="App-Servicios" data-theme="medium"></div>
+            </div>
+          </div>
+          
+          <div class="project">
+            <!--BlackJack-->
+            <h3 class="is-size-3 has-text-light has-text-centered subtitle is-family-code">
+              BlackJack Game
+            </h3>
+            <ul class="image-repo" style="margin-left: 15px; justify-content: space-around;"> 
+              <li class="has-text-light">
+                <img src="images/react.png" alt="React" width="28px" height="28px">
+                ReactJS
+              </li> 
+              <li class="has-text-light">
+                <img src="images/materialui.svg" alt="React" width="28px" height="28px">
+                Material UI
+              </li> 
+              <li class="has-text-light">
+                <img src="images/node.png" alt="React" width="28px" height="28px">
+                Express
+              </li> 
+              <li class="has-text-light">
+                <img src="images/socketio.png" alt="React" width="28px" height="28px">
+                Socket.io
+              </li> 
+            </ul>
+            <div class="image-repo images">&times;
+              <img class="imagen" src="images/BlackJack.png" alt="">
+              <div class="github-card" theme="dark" target="blank" data-github="ruggiadufour" data-repo="BlackJack" data-theme="medium"></div>
+            </div>
+          </div>
+          
+          <div class="image-repo project" style="margin:auto; max-width: 600px;">
+            <!--My Web-->
+            <div class="github-card" theme="dark" target="blank" data-github="ruggiadufour" data-repo="my-web" data-theme="medium"></div>
+          </div>
+    
+            
+          <div id="image-viewer">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="full-image">
+          </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="github-card " data-github="ruggiadufour" data-width="400" data-height="317" data-theme="medium"></div>
-        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
       </div>
     </section>
 
@@ -267,4 +343,15 @@
     </section>
   </body>
   <script src="index.js"></script>
+  <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+  <script>
+    $(".images img").click(function(){
+      $("#full-image").attr("src", $(this).attr("src"));
+      $('#image-viewer').show();
+    });
+
+    $("#image-viewer .close").click(function(){
+      $('#image-viewer').hide();
+    });
+  </script>
 </html>

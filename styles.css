@@ -63,3 +63,29 @@ h1, p, h2, h3{
     margin: auto!important;
     margin-bottom: 10px!important;
 }
+.project{
+    background-color: rgba(77, 75, 75, 0.287)!important;
+    border-radius: 7px;
+    padding: 10px;
+    margin-bottom: 10px!important;
+}
+
+.imagen{
+    max-width: 650px;   
+    min-width: 250px;
+    margin: 10px 0px;
+    margin-bottom: 10px;
+}
+.github-card{
+    width: 250px!important;
+    height: 250px!important;
+}
+
+.image-repo{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
