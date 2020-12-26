@@ -3,28 +3,32 @@
   <head>
       <meta charset="UTF-8">
       <link rel="icon" href="images/favicon.svg" />
-      <meta name="description" content="Portfolio front-end developer Angel Ruggia Dufour">
+      <meta name="description" content="Angel Ruggia Dufour's portfolio. Here you are going to know all about his knowledge.">
       <meta name="keywords" content="Ruggia, Dufour, React, Frontend">
       <meta name="author" content="Angel Ruggia">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Frontend developer: Angel Ruggia Dufour</title>
 
       <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="image.css">
-      <link rel="stylesheet" href="bulma.min.css">
-      <link rel="stylesheet" href="scrollreveal.js">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/image.css">
+      <link rel="stylesheet" href="css/bulma.min.css">
+      <link rel="stylesheet" href="css/particles.css">
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>        
+
       <script src="https://unpkg.com/scrollreveal"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+     
+    <div id="particles-js"></div>
     <section class="hero is-fullheight" id="init">
       <header>
         <nav class="navbar is-fixed-top is-dark" aria-label="main navigation">
           <h1 class="v-h">Site Navigation</h1>
           <div class="container">
             <div class="navbar-brand">
-              <a class="navbar-item is-size-4 has-text-light" href="#">
+              <a class="navbar-item is-size-4 color-text" href="#">
                 <strong>Angel Ruggia Dufour</strong>
               </a>
 
@@ -37,19 +41,19 @@
             
             <div id="nav-var-menue" class="navbar-menu is-static">
               <div class="navbar-end">
-                <a href="#about" class="navbar-item has-text-light">
+                <a href="#about" class="navbar-item color-text">
                   About me
                 </a>
           
-                <a href="#knowledge" class="navbar-item has-text-light">
+                <a href="#knowledge" class="navbar-item color-text">
                   Knowledge
                 </a>
 
-                <a href="#portfolio" class="navbar-item has-text-light">
+                <a href="#portfolio" class="navbar-item color-text">
                   Portfolio
                 </a>
                 
-                <a href="#contact" class="navbar-item has-text-light">
+                <a href="#contact" class="navbar-item color-text">
                   Contact
                 </a>
               </div>
@@ -64,7 +68,7 @@
             <img class=" is-rounded" alt="Profile" src="/images/profile.png">
           </figure>
           <h1 class="v-h">Introduction</h1>
-          <h2 class="is-size-1 subtitle has-text-centered">
+          <h2 class="is-size-1 subtitle has-text-centered color-text">
             Hello, I'm Angel and I'm front-end web developer
           </h2>
         </div>
@@ -74,10 +78,10 @@
     <section class="hero is-fullheight is-secondary" id="about">
       <div class="hero-body">
         <div class="container" itemscope>
-          <h1 class="is-size-1 title">
+          <h1 class="is-size-1 title color-text">
             About me
           </h1>
-          <p class="is-size-4 subtitle">
+          <p class="is-size-4 subtitle color-text-2">
             My name is Angel Ruggia Dufour I am system analyst and a student of system engineering based in Presidencia Roque Saenz Peña Chaco - Argentina.
             I like computing, programming and solving problems whether they are mathematical, logical or whatever.
           </p>
@@ -85,13 +89,13 @@
       </div>
     </section>
 
-    <section class="hero is-fullheight is-secondary" id="knowledge">
+    <section  class="hero is-fullheight is-secondary"  id="knowledge">
       <div class="hero-body">
         <div class="container" itemscope>
-          <h1 class="is-size-1 title" >
+          <h1 class="is-size-1 title color-text" >
             Knowledge
           </h1>
-          <h3 class="is-size-3 title" itemprop="skill">
+          <h3 class="is-size-3 title color-text-2" itemprop="skill">
             Modeling
           </h3>
           <div class="columns">
@@ -106,7 +110,7 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">System design</p>
+                      <p class="title is-4 color-text-3">System design</p>
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
@@ -126,7 +130,7 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">UML diagramming</p>
+                      <p class="title is-4 color-text-3">UML diagramming</p>
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
@@ -146,7 +150,7 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">Database modeling</p>
+                      <p class="title is-4 color-text-3">Database modeling</p>
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
@@ -157,7 +161,7 @@
             </div>
           </div>  
           
-          <h3 class="is-size-3 title" itemprop="skill">
+          <h3 class="is-size-3 title color-text-2" itemprop="skill">
             Web development
           </h3>
           <div class="columns">
@@ -172,7 +176,7 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">ReactJS</p>
+                      <p class="title is-4 color-text-3">ReactJS</p>
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
@@ -193,7 +197,7 @@
                 <div class="card-content">
                   <div class="media">
                     <div class="media-content">
-                      <p class="title is-4">HTML - CSS - JS</p>
+                      <p class="title is-4 color-text-3">HTML - CSS - JS</p>
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
@@ -211,10 +215,10 @@
       <div >
         <div class="container">
           <div class="container">
-            <h1 class="is-size-1 title" >
+            <h1 class="is-size-1 title color-text" >
               Portfolio
             </h1>
-            <h2 class="is-size-3 subtitle">
+            <h2 class="is-size-3 subtitle color-text-2">
               Repository
             </h2>
 
@@ -223,28 +227,28 @@
             <div class="github-card " theme="dark" target="blank" data-github="ruggiadufour" data-width="400" data-height="317" data-theme="medium"></div>
           </div>
     
-          <h2 class="is-size-3 subtitle">
+          <h2 class="is-size-3 subtitle color-text-2">
             Projects
           </h2>
-          <div class="project">;
+          <div class="project">
             <!--Servia-->
-            <h3 class="is-size-3 has-text-light has-text-centered subtitle is-family-code">
+            <h3 class="is-size-3 has-text-centered subtitle is-family-code color-text-2">
               Servia
             </h3>
             <ul class="image-repo" style="margin-left: 15px; justify-content: space-around;"> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/react.png" alt="React" width="28px" height="28px">
                 ReactJS
               </li> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/materialui.svg" alt="React" width="28px" height="28px">
                 Material UI
               </li> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/strapi.png" alt="React" width="28px" height="28px">
                 Strapi
               </li> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/mysql.svg" alt="React" width="28px" height="28px">
                 MySQL
               </li> 
@@ -257,23 +261,23 @@
           
           <div class="project">
             <!--BlackJack-->
-            <h3 class="is-size-3 has-text-light has-text-centered subtitle is-family-code">
+            <h3 class="is-size-3 has-text-centered subtitle is-family-code color-text-2">
               BlackJack Game
             </h3>
             <ul class="image-repo" style="margin-left: 15px; justify-content: space-around;"> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/react.png" alt="React" width="28px" height="28px">
                 ReactJS
               </li> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/materialui.svg" alt="React" width="28px" height="28px">
                 Material UI
               </li> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/node.png" alt="React" width="28px" height="28px">
                 Express
               </li> 
-              <li class="has-text-light">
+              <li class="color-text-3">
                 <img src="images/socketio.png" alt="React" width="28px" height="28px">
                 Socket.io
               </li> 
@@ -301,17 +305,17 @@
     <section class="hero is-fullheight is-secondary" id="contact">
       <div class="hero-body">
         <div class="container">
-          <h1 class="is-size-1 title">
+          <h1 class="is-size-1 title color-text">
             Contact
           </h1>
-          <p class="is-size-4 subtitle">
+          <p class="is-size-4 subtitle color-text-2">
             If you want to contact me please do it throught:
           </p>
 
           <div class="columns element-contact">
               <p class="is-size-4 ">
                 <strong>
-                  <a onclick="copyEmail()">
+                  <a onclick="copyEmail()" class="color-text-3">
                     angelruggia@gmail.com
                   </a>
                 </strong>
@@ -323,7 +327,7 @@
               </button>
             
           </div>
-          <p class="is-size-4 subtitle">
+          <p class="is-size-4 subtitle color-text-2">
             or              
           </p>
           <figure class="container image is-96x96" itemprop="link">
@@ -342,7 +346,11 @@
       </div>
     </section>
   </body>
-  <script src="index.js"></script>
+  <script src="javascript/index.js"></script>
+  <script src="javascript/background.js"></script>
+  <script src="javascript/scrollreveal.js"></script>
+  <script src="javascript/particles.js"></script>
+  <script src="javascript/app.js"></script>
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <script>
     $(".images img").click(function(){

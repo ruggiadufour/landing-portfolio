@@ -1,14 +1,13 @@
 html {
-    scroll-behavior: auto;
-    border: solid thin rgb(177, 174, 174);
+    scroll-behavior: smooth;
 }
-body{
+body{ 
     margin: 0px;
     padding: 0px;
-    background-color: gray!important;
     overflow-x: hidden;
 }
 .card {
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
     background-color: rgba(68, 67, 67, 0.301)!important;
 }
 
@@ -17,29 +16,31 @@ h1, p, h2, h3{
 }
  
 #init{
-    background-image: url(images/init.jpg);
+    background-image: url(../images/init.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 #about{
-    background-image: url(images/about.jpg);
+    background-image: url(../images/about.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 #knowledge{
-    background-image: url(images/knowledge.jpg);
+    background-color: black;
     background-position: center;
     background-size: cover;
 }
 #portfolio{
-    background-image: url(images/portfolio.png);
+    background-image: url(../images/portfolio.png);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 #contact{
-    background-image: url(images/contact.png);
+    background-image: url(../images/portfolio.png);
     background-position: center;
     background-size: cover;  
 }
@@ -64,7 +65,7 @@ h1, p, h2, h3{
     margin-bottom: 10px!important;
 }
 .project{
-    background-color: rgba(77, 75, 75, 0.287)!important;
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
     border-radius: 7px;
     padding: 10px;
     margin-bottom: 10px!important;
@@ -87,5 +88,15 @@ h1, p, h2, h3{
     justify-content: center;
     align-content: center;
     align-items: center;
+}
+
+.color-text{
+    color: #ff3d00!important;
+}
+.color-text-2{
+    color: #dd2c00!important;
+}
+.color-text-3{
+    color: #bf360c!important;
 }
 
