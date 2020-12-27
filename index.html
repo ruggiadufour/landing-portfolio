@@ -22,9 +22,8 @@
   <body>
      
     <div id="particles-js"></div>
-    <section class="hero is-fullheight" id="init">
       <header>
-        <nav class="navbar is-fixed-top is-dark" aria-label="main navigation">
+        <nav class="navbar is-fixed-top is-dark bg-gray-trans" aria-label="main navigation">
           <h1 class="v-h">Site Navigation</h1>
           <div class="container">
             <div class="navbar-brand">
@@ -32,15 +31,15 @@
                 <strong>Angel Ruggia Dufour</strong>
               </a>
 
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav-var-menue">
+              <a role="button" class="navbar-burger is-dark" aria-label="menu" aria-expanded="false" data-target="navMenu">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
               </a>  
             </div>
             
-            <div id="nav-var-menue" class="navbar-menu is-static">
-              <div class="navbar-end">
+            <div id="navMenu" class="navbar-menu is-static bg-gray-trans">
+              <div class="navbar-end is-dark">
                 <a href="#about" class="navbar-item color-text">
                   About me
                 </a>
@@ -62,10 +61,11 @@
         </nav>
       </header>
 
+    <section class="hero is-fullheight" id="init">
       <div class="hero-body">
         <div class="container" itemscope>
           <figure class="container image is-128x128" itemprop="photo">
-            <img class=" is-rounded" alt="Profile" src="/images/profile.png">
+            <img class=" is-rounded" alt="Profile" src="/images/profile.png" style="border: solid 2px #ff3d00;">
           </figure>
           <h1 class="v-h">Introduction</h1>
           <h2 class="is-size-1 subtitle has-text-centered color-text">
@@ -75,13 +75,13 @@
       </div>
     </section>
   
-    <section class="hero is-fullheight is-secondary" id="about">
+    <section class="hero is-fullheight " id="about">
       <div class="hero-body">
         <div class="container" itemscope>
           <h1 class="is-size-1 title color-text">
             About me
           </h1>
-          <p class="is-size-4 subtitle color-text-2">
+          <p class="is-size-4 subtitle has-text-justified color-text-2">
             My name is Angel Ruggia Dufour I am system analyst and a student of system engineering based in Presidencia Roque Saenz Peña Chaco - Argentina.
             I like computing, programming and solving problems whether they are mathematical, logical or whatever.
           </p>
@@ -89,7 +89,7 @@
       </div>
     </section>
 
-    <section  class="hero is-fullheight is-secondary"  id="knowledge">
+    <section  class="hero is-fullheight"  id="knowledge">
       <div class="hero-body">
         <div class="container" itemscope>
           <h1 class="is-size-1 title color-text" >
@@ -253,7 +253,7 @@
                 MySQL
               </li> 
             </ul>
-            <div class="image-repo images">&times;
+            <div class="image-repo ">&times;
               <img class="imagen" src="images/Servia.png" alt="">
               <div class="github-card " theme="dark" target="blank" data-github="ruggiadufour" data-repo="App-Servicios" data-theme="medium"></div>
             </div>
@@ -282,7 +282,7 @@
                 Socket.io
               </li> 
             </ul>
-            <div class="image-repo images">&times;
+            <div class="image-repo ">&times;
               <img class="imagen" src="images/BlackJack.png" alt="">
               <div class="github-card" theme="dark" target="blank" data-github="ruggiadufour" data-repo="BlackJack" data-theme="medium"></div>
             </div>
@@ -302,7 +302,7 @@
       </div>
     </section>
 
-    <section class="hero is-fullheight is-secondary" id="contact">
+    <section class="hero is-fullheight" id="contact">
       <div class="hero-body">
         <div class="container">
           <h1 class="is-size-1 title color-text">
@@ -338,21 +338,23 @@
 
           <input type="text" value="angelruggia@gmail.com" id="myInput" style="margin-left: -1000px;">
 
-          <div class="notification is-success is-light mt-5" id="Notification" style="display: none;">
+          <div class="columns mt-5 element-contact" id="Notification" style="display: none;">
+            <h3 class=" color-text-3">
+              <strong class=" color-text-2">angelruggia@gmail.com</strong> copied to clipboard!            
+            </h3>
             <button class="delete" onclick="closeNotif()"></button>
-            <strong>angelruggia@gmail.com</strong> copied to clipboard!
           </div>
         </div>
       </div>
     </section>
   </body>
   <script src="javascript/index.js"></script>
-  <script src="javascript/background.js"></script>
   <script src="javascript/scrollreveal.js"></script>
   <script src="javascript/particles.js"></script>
   <script src="javascript/app.js"></script>
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <script>
+    //Next code is for show in modal the image selected
     $(".images img").click(function(){
       $("#full-image").attr("src", $(this).attr("src"));
       $('#image-viewer').show();
@@ -360,6 +362,35 @@
 
     $("#image-viewer .close").click(function(){
       $('#image-viewer').hide();
+    });
+  </script>
+
+  <script>
+    //Next code is for deploy the hamburg button in mobile context
+    document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+
+        });
+      });
+    }
+
     });
   </script>
 </html>

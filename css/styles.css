@@ -7,8 +7,8 @@ body{
     overflow-x: hidden;
 }
 .card {
-    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
     background-color: rgba(68, 67, 67, 0.301)!important;
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
 }
 
 h1, p, h2, h3{
@@ -55,9 +55,9 @@ h1, p, h2, h3{
     border-radius: 50%!important;
 }
 .element-contact{
-    background-color: rgba(128, 126, 126, 0.287)!important;
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 15px;
     border-radius: 3px;
     max-width: 500px;
@@ -100,3 +100,7 @@ h1, p, h2, h3{
     color: #bf360c!important;
 }
 
+.bg-gray-trans{
+    background-color: rgba(41, 40, 40, 0.295)!important;
+    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px)!important;
+}

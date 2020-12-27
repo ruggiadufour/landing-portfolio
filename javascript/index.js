@@ -12,7 +12,7 @@ function copyEmail() {
 
     //Show the notification element
     var notif = document.getElementById("Notification");
-    notif.style.display = "block"
+    notif.style.display = "flex"
 }
 function closeNotif(){
     //Close the notification element
