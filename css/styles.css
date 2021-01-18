@@ -22,25 +22,28 @@ h1, p, h2, h3{
     background-attachment: fixed;
 }
 #about{
-    background-image: url(../images/about.jpg);
+    /*background-image: url(../images/about.jpg);*/
+    background-color: #0e0e0e;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 #knowledge{
-    background-color: black;
+    background-color: #0e0e0e;
     background-position: center;
     background-size: cover;
 }
 #portfolio{
-    background-image: url(../images/portfolio.png);
+    /*background-image: url(../images/portfolio.png);*/
+    background-color: #0e0e0e;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 
 }
 #contact{
-    background-image: url(../images/portfolio.png);
+    /*background-image: url(../images/portfolio.png);*/
+    background-color: #0e0e0e;
     background-position: center;
     background-size: cover;  
 }
