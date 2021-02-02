@@ -5,10 +5,19 @@ body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    
+}
+::selection {
+    color: black;
+    background: #dd2c00;
 }
 .card {
     background-color: rgba(68, 67, 67, 0.301)!important;
     backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
+}
+.card:hover{
+    background-color: rgba(68, 67, 67, 0.301)!important;
+    backdrop-filter: grayscale(0.5) opacity(0.15) blur(1px);    
 }
 
 h1, p, h2, h3{
@@ -27,6 +36,12 @@ h1, p, h2, h3{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+.about__img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: .65;
 }
 #knowledge{
     background-color: #0e0e0e;
@@ -106,4 +121,81 @@ h1, p, h2, h3{
 .bg-gray-trans{
     background-color: rgba(41, 40, 40, 0.295)!important;
     backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px)!important;
+}
+
+.gears{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    
+}
+
+@media (max-width:500px) {
+    .gears #gear4{
+        display: none;
+    }
+}
+
+#gear1{
+    top: 50%;
+    left: 50%;
+
+    animation: rotate2 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#gear2{
+    top: 125px;
+    left: 50%;
+
+    animation: rotate1 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#gear3{
+    top: 175px;
+    left: 425px;
+
+    animation: rotate2 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+#gear4{
+    top: 375px;
+    left: 525px;
+
+    animation: rotate1 .5s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+.gear{
+    position: absolute;
+    opacity: .5;
+}
+@keyframes rotate1 {
+    from{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    to {
+        transform:  translate(-50%,-50%) rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    from{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    to {
+        transform:  translate(-50%,-50%) rotate(0deg);
+    }
 }

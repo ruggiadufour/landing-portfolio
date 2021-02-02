@@ -20,6 +20,15 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <!--Background gears-->
+    <div class="gears">
+      <img src="images/svg/gear.svg" class="gear" id="gear4" alt="gearsvg" width="250px" height="250px">
+      <img src="images/svg/gear.svg" class="gear" id="gear3" alt="gearsvg" width="200px" height="200px">
+      <img src="images/svg/gear.svg" class="gear" id="gear2" alt="gearsvg" width="150px" height="150px">
+      <img src="images/svg/gear.svg" class="gear" id="gear1" alt="gearsvg" width="100px" height="100px">
+    </div>
+    <!---->
+
     <div id="particles-js"></div>
       <header>
         <nav class="navbar is-fixed-top is-dark bg-gray-trans" aria-label="main navigation">
@@ -67,9 +76,11 @@
     <section class="hero is-fullheight" id="init">
       <div class="hero-body">
         <div class="container" itemscope>
+          
           <figure class="container image is-128x128" itemprop="photo">
-            <img class=" is-rounded" alt="Profile" src="/images/profile.png" style="border: solid 2px #ff3d00;">
+            <img class=" is-rounded" alt="Profile" src="/images/svg/profile.svg" style="border: solid 2px #ff3d00;">
           </figure>
+         
           <h1 class="v-h">Introduction</h1>
           <h2 class="is-size-1 subtitle has-text-centered color-text">
             Hello, I'm Angel and I'm front-end web developer
@@ -79,8 +90,9 @@
     </section>
   
     <section class="hero is-fullheight " id="about">
-      <div class="hero-body">
-        <div class="container" itemscope>
+      <div style="position: relative; margin: 10vh auto;">
+        <div class="container" style="height: 80vh; margin: 20px; box-sizing: border-box;" itemscope>
+          <img src="images/svg/pi.svg" alt="maths" class="about__img" width="400px" height="400px">
           <h1 class="is-size-1 title color-text">
             About me
           </h1>
@@ -107,7 +119,7 @@
               <div class="card " >
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/design.png" alt="Software design">
+                    <img src="images/svg/codethinking.svg" alt="Software design">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -173,7 +185,7 @@
               <div class="card" >
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/react.png" alt="React">
+                    <img src="images/svg/react.svg" alt="React">
                   </figure>
                 </div>
                 <div class="card-content">
@@ -194,7 +206,7 @@
               <div class="card" >
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/htmlcss.png" alt="HTML CSS">
+                    <img src="images/svg/html-css-js.svg" alt="HTML CSS">
                   </figure>
                 </div>
                 <div class="card-content">
