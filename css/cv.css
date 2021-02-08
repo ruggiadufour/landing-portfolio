@@ -156,14 +156,3 @@ hr {
 a:visited {
   color: #bf360c;
 }
-
-.polygon1{
-  height: 100%;
-  width: 100%;
-  background-color: #bd26006c;
-  position: absolute;
-  z-index: 0;
-}
-.polygon1{
-  clip-path: polygon(100% 0, 100% 35%, 35% 100%, 0 96%, 0 74%);
-}
