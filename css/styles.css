@@ -4,20 +4,29 @@ html {
 body{ 
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;   
+    background-color: rgb(13,20,27); 
 }
 ::selection {
     color: black;
     background: #dd2c00;
 }
-.card {
-    background-color: rgba(68, 67, 67, 0.301)!important;
-    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
+.column {
+    box-shadow:none!important;
+    background-color: rgba(68, 67, 67, 0)!important;
+    /* backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);     */
+    transition: background-color .7s;
+    align-items: center!important;
 }
-.card:hover{
-    background-color: rgba(68, 67, 67, 0.301)!important;
-    backdrop-filter: grayscale(0.5) opacity(0.15) blur(1px);    
+.hover-orange:hover{
+    background-color: #bd26003a!important;   
+}
+.card{
+    background-color: rgba(0, 0, 0, 0)!important; 
+    box-shadow: none!important;
+}
+.card img {
+    padding: 10px;
 }
 
 h1, p, h2, h3{
@@ -29,10 +38,12 @@ h1, p, h2, h3{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: #1c2833;
+    background-blend-mode: soft-light;
 }
 #about{
     /*background-image: url(../images/about.jpg);*/
-    background-color: #0e0e0e;
+    
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -44,13 +55,12 @@ h1, p, h2, h3{
     opacity: .65;
 }
 #knowledge{
-    background-color: #0e0e0e;
+    /* background-color: #0e0e0e; */
     background-position: center;
     background-size: cover;
 }
 #portfolio{
     /*background-image: url(../images/portfolio.png);*/
-    background-color: #0e0e0e;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -58,7 +68,6 @@ h1, p, h2, h3{
 }
 #contact{
     /*background-image: url(../images/portfolio.png);*/
-    background-color: #0e0e0e;
     background-position: center;
     background-size: cover;  
 }
@@ -83,17 +92,14 @@ h1, p, h2, h3{
     margin-bottom: 10px!important;
 }
 .project{
-    backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px);    
+    background-color: rgba(0, 0, 0, 0.2);    
     border-radius: 7px;
-    padding: 10px;
     margin-bottom: 10px!important;
 }
 
 .imagen{
-    max-width: 650px;   
-    min-width: 250px;
-    margin: 10px 0px;
-    margin-bottom: 10px;
+    width: 100%;
+    opacity: .4;
 }
 .github-card{
     width: 250px!important;
@@ -117,10 +123,21 @@ h1, p, h2, h3{
 .color-text-3{
     color: #bf360c!important;
 }
+.color-black-text{
+    color: rgb(13, 20, 27)!important;
+}
+
+.background-color{
+    background-color: #17202ad2!important;
+}
 
 .bg-gray-trans{
     background-color: rgba(41, 40, 40, 0.295)!important;
     backdrop-filter: grayscale(0.5) opacity(0.6) blur(2px)!important;
+}
+
+.m20{
+    margin:0px 20px;
 }
 
 .gears{
@@ -130,7 +147,6 @@ h1, p, h2, h3{
     transform: translate(-50%,-50%);
     width: 500px;
     height: 500px;
-    
 }
 
 @media (max-width:500px) {
@@ -181,7 +197,7 @@ h1, p, h2, h3{
 }
 .gear{
     position: absolute;
-    opacity: .5;
+    opacity: .55;
 }
 @keyframes rotate1 {
     from{
@@ -198,4 +214,24 @@ h1, p, h2, h3{
     to {
         transform:  translate(-50%,-50%) rotate(0deg);
     }
+}
+
+.poligon1, .poligon2, .poligon3, .poligon4{
+    width: 100%;
+    height: 200px;
+    background-color: #bd2600;
+    position: absolute;
+}
+.poligon1{
+    clip-path: polygon(25% 26%, 100% 0, 100% 60%, 71% 44%, 30% 53%, 0% 60%, 0 13%);
+
+}
+.poligon2{
+    clip-path: polygon(39% 33%, 100% 37%, 100% 60%, 69% 66%, 33% 70%, 0% 60%, 0 18%);
+}
+.poligon3{
+    clip-path: polygon(55% 24%, 100% 38%, 100% 76%, 0 53%, 0 30%);
+}
+.poligon4{
+    clip-path: polygon(15% 4%, 31% 7%, 56% 6%, 100% 0, 80% 41%, 22% 66%, 0 100%, 0 0);
 }

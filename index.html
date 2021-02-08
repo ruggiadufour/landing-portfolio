@@ -1,86 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <link rel="icon" href="images/favicon.svg" />
-      <meta name="description" content="Angel Ruggia Dufour's portfolio. Here you are going to know all about his knowledge.">
-      <meta name="keywords" content="Ruggia, Dufour, React, Frontend">
-      <meta name="author" content="Angel Ruggia Dufour">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Frontend developer: Angel Ruggia Dufour</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="images/favicon.svg" />
+    <meta
+      name="description"
+      content="Angel Ruggia Dufour's portfolio. Here you are going to know all about his knowledge."
+    />
+    <meta name="keywords" content="Ruggia, Dufour, React, Frontend" />
+    <meta name="author" content="Angel Ruggia Dufour" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend developer: Angel Ruggia Dufour</title>
 
-      <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-      <link rel="stylesheet" href="css/styles.css">
-      <link rel="stylesheet" href="css/image.css">
-      <link rel="stylesheet" href="css/bulma.min.css">
-      <link rel="stylesheet" href="css/particles.css">
-      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>        
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/image.css" />
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/particles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-      <script src="https://unpkg.com/scrollreveal"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!--Background gears-->
     <div class="gears">
-      <img src="images/svg/gear.svg" class="gear" id="gear4" alt="gearsvg" width="250px" height="250px">
-      <img src="images/svg/gear.svg" class="gear" id="gear3" alt="gearsvg" width="200px" height="200px">
-      <img src="images/svg/gear.svg" class="gear" id="gear2" alt="gearsvg" width="150px" height="150px">
-      <img src="images/svg/gear.svg" class="gear" id="gear1" alt="gearsvg" width="100px" height="100px">
+      <img
+        src="images/svg/gear.svg"
+        class="gear"
+        id="gear4"
+        alt="gearsvg"
+        width="250px"
+        height="250px"
+      />
+      <img
+        src="images/svg/gear.svg"
+        class="gear"
+        id="gear3"
+        alt="gearsvg"
+        width="200px"
+        height="200px"
+      />
+      <img
+        src="images/svg/gear.svg"
+        class="gear"
+        id="gear2"
+        alt="gearsvg"
+        width="150px"
+        height="150px"
+      />
+      <img
+        src="images/svg/gear.svg"
+        class="gear"
+        id="gear1"
+        alt="gearsvg"
+        width="100px"
+        height="100px"
+      />
     </div>
     <!---->
 
-    <div id="particles-js"></div>
-      <header>
-        <nav class="navbar is-fixed-top is-dark bg-gray-trans" aria-label="main navigation">
-          <h1 class="v-h">Site Navigation</h1>
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item is-size-4 color-text" href="#">
-                <strong>Angel Ruggia Dufour</strong>
+    <!-- <div id="particles-js"></div> -->
+
+    <header>
+      <nav
+        class="navbar is-fixed-top is-dark background-color"
+        aria-label="main navigation"
+      >
+        <h1 class="v-h">Site Navigation</h1>
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item is-size-4 color-text " href="#">
+              <strong>Angel Ruggia Dufour</strong>
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger is-dark"
+              aria-label="menu"
+              aria-expanded="false"
+              data-target="navMenu"
+            >
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+
+          <div id="navMenu" class="navbar-menu is-static background-color">
+            <div class="navbar-end is-dark">
+              <a href="#about" class="navbar-item color-text"> About me </a>
+
+              <a href="#knowledge" class="navbar-item color-text">
+                Knowledge
               </a>
 
-              <a role="button" class="navbar-burger is-dark" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>  
-            </div>
-            
-            <div id="navMenu" class="navbar-menu is-static bg-gray-trans">
-              <div class="navbar-end is-dark">
-                <a href="#about" class="navbar-item color-text">
-                  About me
-                </a>
-          
-                <a href="#knowledge" class="navbar-item color-text">
-                  Knowledge
-                </a>
+              <a href="#portfolio" class="navbar-item color-text">
+                Portfolio
+              </a>
 
-                <a href="#portfolio" class="navbar-item color-text">
-                  Portfolio
-                </a>
-                
-                <a href="#contact" class="navbar-item color-text">
-                  Contact
-                </a>
+              <a href="#contact" class="navbar-item color-text"> Contact </a>
 
-                <a href="cv.html" target="blank" class="navbar-item color-text">
-                  Resume (CV)
-                </a>
-              </div>
+              <a href="cv.html" target="blank" class="navbar-item color-text">
+                Resume (CV)
+              </a>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
     <section class="hero is-fullheight" id="init">
       <div class="hero-body">
         <div class="container" itemscope>
-          
           <figure class="container image is-128x128" itemprop="photo">
-            <img class=" is-rounded" alt="Profile" src="/images/svg/profile.svg" style="border: solid 2px #ff3d00;">
+            <img
+              class="is-rounded"
+              alt="Profile"
+              src="/images/svg/profile.svg"
+              style="border: solid 2px #ff3d00"
+            />
           </figure>
-         
+
           <h1 class="v-h">Introduction</h1>
           <h2 class="is-size-1 subtitle has-text-centered color-text">
             Hello, I'm Angel and I'm front-end web developer
@@ -88,38 +136,55 @@
         </div>
       </div>
     </section>
-  
-    <section class="hero is-fullheight " id="about">
-      <div style="position: relative; margin: 10vh auto;">
-        <div class="container" style="height: 80vh; margin: 20px; box-sizing: border-box;" itemscope>
-          <img src="images/svg/pi.svg" alt="maths" class="about__img" width="400px" height="400px">
-          <h1 class="is-size-1 title color-text">
-            About me
-          </h1>
+
+    <div class="poligon1" style="top: 92vh;"></div>
+
+    <section class="hero is-fullheight" id="about">
+      <div style="position: relative; margin: 10vh auto">
+        <div
+          class="container"
+          style="height: 80vh; margin: 20px; box-sizing: border-box"
+          itemscope
+        >
+          <img
+            src="images/svg/pi.svg"
+            alt="maths"
+            class="about__img"
+            width="400px"
+            height="400px"
+          />
+          <h1 class="is-size-1 title color-text">About me</h1>
           <p class="is-size-4 subtitle has-text-justified color-text-2">
-            My name is Angel Ruggia Dufour I am system analyst and a student of system engineering based in Presidencia Roque Saenz Peña Chaco - Argentina.
-            I like computing, programming and solving problems whether they are mathematical, logical or whatever.
+            My name is Angel Ruggia Dufour and I am system analyst and a student of
+            system engineering, living in Presidencia Roque Saenz Peña Chaco -
+            Argentina. I like computing, programming and solving problems
+            whether they are mathematical, logical or whatever and above all I like to learn new things.
           </p>
         </div>
       </div>
     </section>
 
-    <section  class="hero is-fullheight"  id="knowledge">
+    <div style="position: relative;">
+      <div class="poligon2" style="top: -100px;"></div>
+    </div>
+
+    <section class="hero is-fullheight" id="knowledge">
       <div class="hero-body">
         <div class="container" itemscope>
-          <h1 class="is-size-1 title color-text" >
-            Knowledge
-          </h1>
+          <h1 class="is-size-1 title color-text">Knowledge</h1>
           <h3 class="is-size-3 title color-text-2" itemprop="skill">
             Modeling
           </h3>
-          <div class="columns">
+          <div class="columns is-vcentered">
             <!--System design-->
-            <div class="column">
-              <div class="card " >
+            <div class="column hover-orange">
+              <div class="card">
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/svg/codethinking.svg" alt="Software design">
+                    <img
+                      src="images/svg/codethinking.svg"
+                      alt="Software design"
+                    />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -129,17 +194,35 @@
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
-                  <div class="content">
+                  <div class="content"></div>
+                </div>
+              </div>
+            </div>
+            <!--Use cases-->
+            <div class="column hover-orange">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="container image">
+                    <img src="images/svg/usecases.svg" alt="usecases" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4 color-text-3">Use cases</p>
+                      <p class="subtitle is-6"></p>
+                    </div>
                   </div>
+                  <div class="content"></div>
                 </div>
               </div>
             </div>
             <!--UML-->
-            <div class="column">
-              <div class="card" >
+            <div class="column hover-orange">
+              <div class="card">
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/uml.png" alt="UML">
+                    <img src="images/uml.png" alt="UML" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -149,17 +232,16 @@
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
-                  <div class="content">
-                  </div>
+                  <div class="content"></div>
                 </div>
               </div>
             </div>
-            <!--Database modeling-->
-            <div class="column">
-              <div class="card" >
+              <!--Database modeling-->
+            <div class="column hover-orange">
+              <div class="card">
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/database.png" alt="Database">
+                    <img src="images/database.png" alt="Database" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -169,23 +251,22 @@
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
-                  <div class="content">
-                  </div>
+                  <div class="content"></div>
                 </div>
               </div>
             </div>
-          </div>  
-          
+          </div>
+
           <h3 class="is-size-3 title color-text-2" itemprop="skill">
             Web development
           </h3>
-          <div class="columns">
+          <div class="columns is-vcentered">
             <!--React-->
-            <div class="column is-one-third">
-              <div class="card" >
+            <div class="column hover-orange is-one-third">
+              <div class="card">
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/svg/react.svg" alt="React">
+                    <img src="images/svg/react.svg" alt="React" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -195,18 +276,17 @@
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
-                  <div class="content">
-                  </div>
+                  <div class="content"></div>
                 </div>
               </div>
             </div>
 
             <!--HTML - CSS-->
-            <div class="column is-one-third">
-              <div class="card" >
+            <div class="column hover-orange is-one-third">
+              <div class="card">
                 <div class="card-image">
                   <figure class="container image">
-                    <img src="images/svg/html-css-js.svg" alt="HTML CSS">
+                    <img src="images/svg/html-css-js.svg" alt="HTML CSS" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -216,8 +296,7 @@
                       <p class="subtitle is-6"></p>
                     </div>
                   </div>
-                  <div class="content">
-                  </div>
+                  <div class="content"></div>
                 </div>
               </div>
             </div>
@@ -226,136 +305,262 @@
       </div>
     </section>
 
-    <section class="hero" id="portfolio">
-      <div >
-        <div class="container">
-          <div class="container">
-            <h1 class="is-size-1 title color-text" >
-              Portfolio
-            </h1>
-            <h2 class="is-size-3 subtitle color-text-2">
-              Repository
-            </h2>
+    <div style="position: relative;">
+      <div class="poligon3" style="top: -100px;"></div>
+    </div>
 
+    <section class="hero" id="portfolio">
+      <div>
+        <div class="container itemscope">
+          <div class="container">
+            <h1 class="is-size-1 title color-text m20">Portfolio</h1>
+            <h2 class="is-size-3 subtitle color-text-2 m20">Repository</h2>
           </div>
-          <div class="project image-repo" style="margin:auto; max-width: 600px">
-            <div class="github-card " theme="dark" target="blank" data-github="ruggiadufour" data-width="400" data-height="317" data-theme="medium"></div>
+          <div
+            class="project image-repo"
+            style="margin: auto; max-width: 400px"
+          >
+            <div
+              class="github-card"
+              theme="dark"
+              target="blank"
+              data-github="ruggiadufour"
+              data-width="400"
+              data-height="317"
+              data-theme="medium"
+            ></div>
           </div>
-    
-          <h2 class="is-size-3 subtitle color-text-2">
-            Projects
-          </h2>
-          <div class="project images">
-            <!--Servia-->
-            <h3 class="is-size-3 has-text-centered subtitle is-family-code color-text-2">
-              Servia
-            </h3>
-            <ul class="image-repo" style="margin-left: 15px; justify-content: space-around;"> 
-              <li class="color-text-3">
-                <img src="images/react.png" alt="React" width="28px" height="28px">
-                ReactJS
-              </li> 
-              <li class="color-text-3">
-                <img src="images/materialui.svg" alt="React" width="28px" height="28px">
-                Material UI
-              </li> 
-              <li class="color-text-3">
-                <img src="images/strapi.png" alt="React" width="28px" height="28px">
-                Strapi
-              </li> 
-              <li class="color-text-3">
-                <img src="images/mysql.svg" alt="React" width="28px" height="28px">
-                MySQL
-              </li> 
-            </ul>
-            <div class="image-repo ">&times;
-              <img class="imagen" src="images/Servia.png" alt="">
-              <div class="github-card " theme="dark" target="blank" data-github="ruggiadufour" data-repo="App-Servicios" data-theme="medium"></div>
+
+          <h2 class="is-size-3 subtitle color-text-2 m20">Projects</h2>
+
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="project">
+                <!--Servia-->
+                <h3
+                  class="is-size-3 has-text-centered subtitle is-family-code color-text-2"
+                >
+                  Servia
+                </h3>
+                <p class="is-size-5 subtitle color-text m20">
+                  Web-app to publish and request home services. It was developed with a college mate for the System Analyst college degree. 
+                </p>
+                <ul
+                  class="image-repo"
+                  style="margin-left: 15px; justify-content: space-around"
+                >
+                  <li class="color-text-3">
+                    <img
+                      src="images/react.png"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    ReactJS
+                  </li>
+                  <li class="color-text-3">
+                    <img
+                      src="images/materialui.svg"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    Material UI
+                  </li>
+                  <li class="color-text-3">
+                    <img
+                      src="images/strapi.png"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    Strapi
+                  </li>
+                  <li class="color-text-3">
+                    <img
+                      src="images/mysql.svg"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    MySQL
+                  </li>
+                </ul>
+
+                <ul class="m20">
+                  <li >
+                    <a class="color-text-3" href="https://github.com/ruggiadufour/App-Servicios">Repo</a>
+                  </li>
+                  <li>
+                    <a class="color-text-3" href="https://instyc.github.io/App-Servicios/">View</a>
+                  </li>
+                </ul>
+                
+                <div class="image-repo">
+                  &times;
+                  <img class="imagen" src="images/Servia.png" alt="servia-image" />
+                  <!-- <div
+                    class="github-card"
+                    theme="dark"
+                    target="blank"
+                    data-github="ruggiadufour"
+                    data-repo="App-Servicios"
+                    data-theme="medium"
+                  ></div> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="project">
+                <!--BlackJack-->
+                <h3
+                  class="is-size-3 has-text-centered subtitle is-family-code color-text-2"
+                >
+                  BlackJack Game
+                </h3>
+                <ul
+                  class="image-repo"
+                  style="margin-left: 15px; justify-content: space-around"
+                >
+                  <li class="color-text-3">
+                    <img
+                      src="images/react.png"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    ReactJS
+                  </li>
+                  <li class="color-text-3">
+                    <img
+                      src="images/materialui.svg"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    Material UI
+                  </li>
+                  <li class="color-text-3">
+                    <img
+                      src="images/node.png"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    Express
+                  </li>
+                  <li class="color-text-3">
+                    <img
+                      src="images/socketio.png"
+                      alt="React"
+                      width="28px"
+                      height="28px"
+                    />
+                    Socket.io
+                  </li>
+                </ul>
+
+                <ul class="m20">
+                  <li >
+                    <a class="color-text-3" href="https://github.com/ruggiadufour/BlackJack">Repo</a>
+                  </li>
+                  <li>
+                    <a class="color-text-3" href="https://ruggiadufour.github.io/BlackJack/">View</a>
+                  </li>
+                </ul>
+
+                <div class="image-repo">
+                  &times;
+                  <img class="imagen" src="images/BlackJack.png" alt="blackjack-image" />
+                  
+                  <!-- <div
+                    class="github-card"
+                    theme="dark"
+                    target="blank"
+                    data-github="ruggiadufour"
+                    data-repo="BlackJack"
+                    data-theme="medium"
+                  ></div> -->
+                </div>
+              </div>
             </div>
           </div>
-          
-          <div class="project images">
-            <!--BlackJack-->
-            <h3 class="is-size-3 has-text-centered subtitle is-family-code color-text-2">
-              BlackJack Game
-            </h3>
-            <ul class="image-repo" style="margin-left: 15px; justify-content: space-around;"> 
-              <li class="color-text-3">
-                <img src="images/react.png" alt="React" width="28px" height="28px">
-                ReactJS
-              </li> 
-              <li class="color-text-3">
-                <img src="images/materialui.svg" alt="React" width="28px" height="28px">
-                Material UI
-              </li> 
-              <li class="color-text-3">
-                <img src="images/node.png" alt="React" width="28px" height="28px">
-                Express
-              </li> 
-              <li class="color-text-3">
-                <img src="images/socketio.png" alt="React" width="28px" height="28px">
-                Socket.io
-              </li> 
-            </ul>
-            <div class="image-repo ">&times;
-              <img class="imagen" src="images/BlackJack.png" alt="">
-              <div class="github-card" theme="dark" target="blank" data-github="ruggiadufour" data-repo="BlackJack" data-theme="medium"></div>
-            </div>
-          </div>
-          
-          <div class="image-repo project" style="margin:auto; max-width: 600px;">
-            <!--My Web-->
-            <div class="github-card" theme="dark" target="blank" data-github="ruggiadufour" data-repo="my-web" data-theme="medium"></div>
-          </div>
-    
-            
+
+          <!-- <div
+            class="image-repo project"
+            style="margin: auto; max-width: 600px"
+          >
+            My Web
+            <div
+              class="github-card"
+              theme="dark"
+              target="blank"
+              data-github="ruggiadufour"
+              data-repo="my-web"
+              data-theme="medium"
+            ></div>
+          </div> -->
+
           <div id="image-viewer">
             <span class="close">&times;</span>
-            <img class="modal-content" id="full-image">
+            <img class="modal-content" id="full-image" />
           </div>
         </div>
       </div>
     </section>
 
+    <div style="position: relative;">
+      <div class="poligon4" style="top: 0px;height: 100vh;"></div>
+    </div>
+
     <section class="hero is-fullheight" id="contact">
       <div class="hero-body">
         <div class="container">
-          <h1 class="is-size-1 title color-text">
-            Contact
-          </h1>
-          <p class="is-size-4 subtitle color-text-2">
+          <h1 class="is-size-1 title color-black-text">Contact</h1>
+          <p class="is-size-4 subtitle color-black-text">
             If you want to contact me please do it throught:
           </p>
 
           <div class="columns element-contact">
-              <p class="is-size-4 ">
-                <strong>
-                  <a onclick="copyEmail()" class="color-text-3">
-                    angelruggia@gmail.com
-                  </a>
-                </strong>
-              </p>
-              <button class="button is-large circle" onclick="copyEmail()">
-                <span class="icon">
-                  <i class="fas fa-copy"></i>
-                </span>
-              </button>
-            
+            <p class="is-size-4">
+              <strong>
+                <a onclick="copyEmail()" class="color-text-3">
+                  angelruggia@gmail.com
+                </a>
+              </strong>
+            </p>
+            <button class="button is-large circle" onclick="copyEmail()">
+              <span class="icon">
+                <i class="fas fa-copy"></i>
+              </span>
+            </button>
           </div>
-          <p class="is-size-4 subtitle color-text-2">
-            or              
-          </p>
+          <p class="is-size-4 subtitle color-black-text">or</p>
           <figure class="container image is-96x96" itemprop="link">
-            <a href="https://www.linkedin.com/in/angel-ruggia-dufour-1608b815a/" target="_blank" >
-              <img alt="Linkedin" src="/images/linkedin.png">
+            <a
+              href="https://www.linkedin.com/in/angel-ruggia-dufour-1608b815a/"
+              target="_blank"
+            >
+              <img alt="Linkedin" src="/images/linkedin.png" />
             </a>
           </figure>
 
-          <input type="text" value="angelruggia@gmail.com" id="myInput" style="margin-left: -1000px;">
+          <input
+            type="text"
+            value="angelruggia@gmail.com"
+            id="myInput"
+            style="margin-left: -1000px"
+          />
 
-          <div class="columns mt-5 element-contact" id="Notification" style="display: none;">
-            <h3 class=" color-text-3">
-              <strong class=" color-text-2">angelruggia@gmail.com</strong> copied to clipboard!            
+          <div
+            class="columns mt-5 element-contact"
+            id="Notification"
+            style="display: none"
+          >
+            <h3 class="color-text-3">
+              <strong class="color-text-2">angelruggia@gmail.com</strong> copied
+              to clipboard!
             </h3>
             <button class="delete" onclick="closeNotif()"></button>
           </div>
@@ -370,42 +575,40 @@
   <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
   <script>
     //Next code is for show in modal the image selected
-    $(".images img").click(function(){
+    $(".images img").click(function () {
       $("#full-image").attr("src", $(this).attr("src"));
-      $('#image-viewer').show();
+      $("#image-viewer").show();
     });
 
-    $("#image-viewer .close").click(function(){
-      $('#image-viewer').hide();
+    $("#image-viewer .close").click(function () {
+      $("#image-viewer").hide();
     });
   </script>
 
   <script>
     //Next code is for deploy the hamburg button in mobile context
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-      // Add a click event on each of them
-      $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
-
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target;
-          const $target = document.getElementById(target);
-
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active');
-          $target.classList.toggle('is-active');
-
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
         });
-      });
-    }
-
+      }
     });
   </script>
 </html>
