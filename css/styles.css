@@ -11,6 +11,15 @@ body{
     color: black;
     background: #dd2c00;
 }
+::-webkit-scrollbar{
+    width: 12px;
+    background-color:#bf360c;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: tomato;
+}
 .column {
     box-shadow:none!important;
     background-color: rgba(68, 67, 67, 0)!important;
